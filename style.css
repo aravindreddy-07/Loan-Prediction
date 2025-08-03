@@ -1,0 +1,186 @@
+/* Global Styles */
+body {
+    background: linear-gradient(to bottom right, #f0f4f8, #ffffff); /* Soft gradient background */
+    color: #1d1d1f; /* Dark but not too harsh black */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background: rgba(255, 255, 255, 0.9);
+    position: sticky;
+    top: 0;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+header .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #0070c9;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #f9f9f9, #ffffff);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: center; /* Align items vertically */
+    height: 100vh;           /* Make hero section fill the viewport */
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #1d1d1f;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #6e6e73;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero .btn-primary {
+    background-color: #0070c9;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 28px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: 0 4px 12px rgba(0, 112, 201, 0.25);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    margin-top: 30px; /* Add margin to push button down */
+}
+
+.hero .btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 18px rgba(0, 86, 179, 0.35);
+    transform: translateY(-3px);
+}
+
+/* Form Section */
+.section {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border: 1px solid #0070c9;
+    box-shadow: 0 0 12px rgba(0, 112, 201, 0.25);
+}
+
+button {
+    background-color: #0070c9;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 28px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 112, 201, 0.25);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 18px rgba(0, 86, 179, 0.35);
+    transform: translateY(-3px);
+}
+
+/* Footer Section */
+footer {
+    background-color: #f8f8f8;
+    color: #666666;
+    text-align: center;
+    padding: 40px;
+    font-size: 0.9rem;
+    border-top: 1px solid #e6e6e6;
+}
+
+footer a {
+    color: #0070c9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #0056b3;
+}

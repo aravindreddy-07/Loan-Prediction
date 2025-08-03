@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Loan Predictor</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Form Section -->
+    <section id="form-section" class="section">
+        <h2>Enter Your Details</h2>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label for="income_annum">Annual Income:</label>
+                <input type="number" step="0.01" name="income_annum" required>
+            </div>
+
+            <div class="form-group">
+                <label for="loan_amount">Loan Amount:</label>
+                <input type="number" step="0.01" name="loan_amount" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cibil_score">CIBIL Score:</label>
+                <input type="number" step="0.01" name="cibil_score" required>
+            </div>
+
+            <div class="form-group">
+                <label for="residential_assets_value">Residential Assets Value:</label>
+                <input type="number" step="0.01" name="residential_assets_value" required>
+            </div>
+
+            <div class="form-group">
+                <label for="commercial_assets_value">Commercial Assets Value:</label>
+                <input type="number" step="0.01" name="commercial_assets_value" required>
+            </div>
+
+            <div class="form-group">
+                <label for="luxury_assets_value">Luxury Assets Value:</label>
+                <input type="number" step="0.01" name="luxury_assets_value" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bank_asset_value">Bank Asset Value:</label>
+                <input type="number" step="0.01" name="bank_asset_value" required>
+            </div>
+
+            <button type="submit" class="btn-primary">Predict</button>
+        </form>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About This App</h2>
+        <p>This application uses machine learning to predict whether a loan will be approved based on financial metrics such as income, asset values, and credit score.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need support, feel free to reach out via email: <a href="mailto:support@loanpredictor.com">support@loanpredictor.com</a></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Loan Predictor. All Rights Reserved.</p>
+        <p><a href="#hero">Back to top</a></p>
+    </footer>
+
+</body>
+</html>
